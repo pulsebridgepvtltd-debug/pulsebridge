@@ -5,11 +5,11 @@ import { ArrowRight, Droplets, Gauge, HeartPulse, Thermometer, Wind } from "luci
 import FlipCard from "@/components/flip-card"
 
 const sensors = [
-  { icon: HeartPulse, label: "ECG & Heart Rate", color: "from-rose-500/30 to-rose-500/0", border: "border-rose-400/30", text: "text-rose-200" },
-  { icon: Wind, label: "Respiratory", color: "from-sky-500/30 to-sky-500/0", border: "border-sky-400/30", text: "text-sky-200" },
-  { icon: Thermometer, label: "Temperature", color: "from-orange-500/30 to-orange-500/0", border: "border-orange-400/30", text: "text-orange-200" },
-  { icon: Droplets, label: "SpO₂", color: "from-cyan-500/30 to-cyan-500/0", border: "border-cyan-400/30", text: "text-cyan-200" },
-  { icon: Gauge, label: "Blood Pressure", color: "from-violet-500/30 to-violet-500/0", border: "border-violet-400/30", text: "text-violet-200" },
+  { icon: HeartPulse, label: "ECG & Heart Rate" },
+  { icon: Wind, label: "Respiratory" },
+  { icon: Thermometer, label: "Temperature" },
+  { icon: Droplets, label: "SpO₂" },
+  { icon: Gauge, label: "Blood Pressure" },
 ]
 
 export default function SdkSection() {
@@ -164,25 +164,20 @@ export default function SdkSection() {
           </motion.div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
           {sensors.map((s, idx) => {
             const Icon = s.icon
             return (
-              <FlipCard key={s.label} delay={idx * 0.16} duration={1.3} from={68}>
+              <FlipCard key={s.label} delay={idx * 0.1} duration={0.9} from={50}>
                 <motion.div
-                  whileHover={{ y: -5 }}
-                  transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-                  className={`group relative overflow-hidden rounded-xl border ${s.border} bg-white/[0.04] backdrop-blur-md p-5 text-center transition-colors`}
+                  whileHover={{ y: -4 }}
+                  transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
+                  className="group flex flex-col items-center text-center gap-3 rounded-xl border border-white/10 bg-white/[0.04] backdrop-blur-md p-5 hover:border-white/25 hover:bg-white/[0.07] transition-colors"
                 >
-                  <div
-                    className={`absolute inset-0 bg-gradient-to-b ${s.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
-                  />
-                  <div className="relative flex flex-col items-center gap-3">
-                    <span className={`w-11 h-11 rounded-lg bg-gradient-to-br ${s.color} border ${s.border} flex items-center justify-center`}>
-                      <Icon className={`w-5 h-5 ${s.text}`} />
-                    </span>
-                    <span className="text-xs font-light text-white">{s.label}</span>
-                  </div>
+                  <span className="w-11 h-11 rounded-lg border border-white/10 bg-white/[0.05] flex items-center justify-center group-hover:border-white/30 transition-colors">
+                    <Icon className="w-5 h-5 text-white/85" />
+                  </span>
+                  <span className="text-xs font-light text-white/85">{s.label}</span>
                 </motion.div>
               </FlipCard>
             )

@@ -26,7 +26,7 @@ const fadeUp = {
 
 export default function Footer() {
   return (
-    <footer className="relative pt-24 pb-10 mt-16 border-t border-white/10">
+    <footer className="relative overflow-hidden pt-24 pb-10 mt-16 border-t border-white/10">
       <div
         aria-hidden
         className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-violet-300/40 to-transparent"

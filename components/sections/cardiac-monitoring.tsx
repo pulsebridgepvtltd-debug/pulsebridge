@@ -67,7 +67,7 @@ export default function CardiacMonitoring() {
                       <span className="text-[10px] font-mono text-rose-300/80">{lead}</span>
                       <span className="text-[10px] font-mono text-white/30">25 mm/s · 10 mm/mV</span>
                     </div>
-                    <div className="h-10">
+                    <div className="h-10 overflow-hidden">
                       <EcgLine color={i === 0 ? "#fb7185" : i === 1 ? "#f97316" : "#fbbf24"} duration={2.4 + i * 0.3} />
                     </div>
                   </div>
