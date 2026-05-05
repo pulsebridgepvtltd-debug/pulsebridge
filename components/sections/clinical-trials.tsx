@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { motion } from "framer-motion"
 import {
   ArrowRight,
@@ -85,17 +86,21 @@ export default function ClinicalTrials() {
               })}
             </motion.ul>
 
-            <motion.button
+            <motion.div
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.6 }}
-              whileHover={{ x: 4 }}
-              className="mt-8 inline-flex items-center gap-2 text-xs font-light text-cyan-200 hover:text-white transition-colors group"
+              className="mt-8"
             >
-              Read More
-              <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
-            </motion.button>
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 text-xs font-light text-cyan-200 hover:text-white hover:translate-x-1 transition-all group"
+              >
+                Read More
+                <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
+              </Link>
+            </motion.div>
           </motion.div>
 
           <motion.div

@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { motion } from "framer-motion"
 import { ArrowRight, Check } from "lucide-react"
 import EcgLine from "@/components/ecg-line"
@@ -180,10 +181,13 @@ export default function HospitalAtHome() {
               }}
               className="pt-3"
             >
-              <button className="inline-flex items-center gap-2 text-sm font-light text-violet-200 hover:text-white transition-colors group">
+              <Link
+                href="/contact"
+                className="inline-flex items-center gap-2 text-sm font-light text-violet-200 hover:text-white transition-colors group"
+              >
                 Read More
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-              </button>
+              </Link>
             </motion.li>
           </motion.ul>
         </div>

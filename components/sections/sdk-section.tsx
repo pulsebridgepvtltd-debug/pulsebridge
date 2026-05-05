@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { motion } from "framer-motion"
 import { ArrowRight, Droplets, Gauge, HeartPulse, Thermometer, Wind } from "lucide-react"
 import FlipCard from "@/components/flip-card"
@@ -53,21 +54,19 @@ export default function SdkSection() {
             </p>
 
             <div className="flex flex-wrap items-center gap-4">
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+              <Link
+                href="/contact"
                 className="px-6 py-3 rounded-full bg-white text-black text-xs font-medium hover:bg-white/90 transition-colors inline-flex items-center gap-2"
               >
                 Contact Us to Get Started
                 <ArrowRight className="w-3.5 h-3.5" />
-              </motion.button>
-              <motion.button
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
+              </Link>
+              <Link
+                href="/contact"
                 className="px-6 py-3 rounded-full bg-white/5 border border-white/15 text-white text-xs font-light hover:bg-white/10 transition-colors"
               >
                 View Documentation
-              </motion.button>
+              </Link>
             </div>
           </motion.div>
 

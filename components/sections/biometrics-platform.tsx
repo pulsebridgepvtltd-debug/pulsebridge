@@ -1,5 +1,6 @@
 "use client"
 
+import Link from "next/link"
 import { useEffect, useRef, useState } from "react"
 import { motion } from "framer-motion"
 import { ArrowRight, Brain, FlaskConical, Gauge, Heart } from "lucide-react"
@@ -234,13 +235,14 @@ function SpecialtyCard({ specialty, index }: { specialty: Specialty; index: numb
           </div>
 
           <div className="relative flex items-center justify-between">
-            <button
+            <Link
+              href="/contact"
               className="group inline-flex items-center gap-1.5 text-xs font-light text-white/85 hover:text-white transition-colors"
               style={{ pointerEvents: "auto" }}
             >
               Learn more
               <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" />
-            </button>
+            </Link>
             <span
               className={`text-[9px] font-light ${specialty.iconColor} uppercase tracking-[0.2em]`}
             >

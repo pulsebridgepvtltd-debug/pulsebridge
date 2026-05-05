@@ -34,19 +34,19 @@ export default function Footer() {
       <div className="absolute -top-24 left-1/4 w-[28rem] h-[28rem] rounded-full bg-violet-600/10 blur-[140px] pointer-events-none" />
       <div className="absolute -bottom-20 right-1/4 w-[28rem] h-[28rem] rounded-full bg-fuchsia-600/10 blur-[140px] pointer-events-none" />
 
-      <div className="relative max-w-6xl mx-auto px-6 md:px-10">
+      <div className="relative max-w-7xl mx-auto px-6 md:px-10">
         <motion.div
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={{ visible: { transition: { staggerChildren: 0.08 } } }}
-          className="grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-12 mb-14"
+          className="flex flex-col md:flex-row md:justify-between md:items-start gap-10 md:gap-8 mb-14"
         >
           {/* Brand */}
           <motion.div
             variants={fadeUp}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="md:col-span-4"
+            className="md:max-w-[15rem]"
           >
             <Link href="/" className="inline-flex items-center group mb-5">
               <span className="text-white text-xl md:text-2xl font-light tracking-wide">
@@ -64,7 +64,6 @@ export default function Footer() {
           <motion.div
             variants={fadeUp}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="md:col-span-3"
           >
             <h4 className="text-xs font-light uppercase tracking-[0.22em] text-violet-200 mb-5 flex items-center gap-2">
               <MapPin className="w-3.5 h-3.5" />
@@ -83,7 +82,6 @@ export default function Footer() {
           <motion.div
             variants={fadeUp}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="md:col-span-3"
           >
             <h4 className="text-xs font-light uppercase tracking-[0.22em] text-violet-200 mb-5 flex items-center gap-2">
               <MapPin className="w-3.5 h-3.5" />
@@ -107,7 +105,6 @@ export default function Footer() {
           <motion.div
             variants={fadeUp}
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-            className="md:col-span-2"
           >
             <h4 className="text-xs font-light uppercase tracking-[0.22em] text-violet-200 mb-5">
               Contact Us
@@ -115,12 +112,12 @@ export default function Footer() {
             <div className="space-y-4">
               <a
                 href="mailto:info@pulsebridgehealthcare.com"
-                className="group flex items-start gap-3 text-sm font-light text-white/70 hover:text-white transition-colors break-all"
+                className="group flex items-center gap-3 text-sm font-light text-white/70 hover:text-white transition-colors"
               >
-                <span className="mt-0.5 flex-shrink-0 w-9 h-9 rounded-md bg-violet-500/15 border border-violet-400/25 flex items-center justify-center group-hover:border-violet-300/50 transition-colors">
+                <span className="flex-shrink-0 w-9 h-9 rounded-md bg-violet-500/15 border border-violet-400/25 flex items-center justify-center group-hover:border-violet-300/50 transition-colors">
                   <Mail className="w-4 h-4 text-violet-200" />
                 </span>
-                info@pulsebridgehealthcare.com
+                <span className="whitespace-nowrap">info@pulsebridgehealthcare.com</span>
               </a>
               <a
                 href="tel:+914023420049"
@@ -129,7 +126,7 @@ export default function Footer() {
                 <span className="flex-shrink-0 w-9 h-9 rounded-md bg-violet-500/15 border border-violet-400/25 flex items-center justify-center group-hover:border-violet-300/50 transition-colors">
                   <Phone className="w-4 h-4 text-violet-200" />
                 </span>
-                +91-40 23420049
+                <span className="whitespace-nowrap">+91-40 23420049</span>
               </a>
             </div>
           </motion.div>

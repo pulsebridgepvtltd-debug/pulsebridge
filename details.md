@@ -1,61 +1,73 @@
-Innovative Lightweight        
-& Comfort Wearable
-Holter
-24/48 hour
-Holter
-CEM
-Cardiac 
-Event Monitor
-MCT
-S-Patch is the Key to your seam
-less and unmatched continuous 
-ECG monitoring.
-Extended 
-Holter
-Mobile Cardiac 
-Telemetry 
-14 days
-4-in-1 Test Capability
-All the remarkable power of S-Patch, 
-crafted into the lightness of just two sheets of paper.
-Recent S-Patch achievements
-• S-Patch launched in over 16 countries
-• S-Patch deployed to over 600 Hospitals and Clinics worldwide
-• S-Patch received FDA 510K Clearance
-• S-Patch certified CE, ISO 13485, MFDS, GMP
-GLOBAL  
-CERTIFICATION
-2                                                                                                                              
-Wear it. Be Healthy.
-Single lead wearable patch  
-Powered by Samsung Smart Health Processor 
-Clear P-wave Showerproof 
-ㆍ Lead II position visualizing intact 
-ㆍ Water-resistant patch (IP55 grade) 
-     P-waves 
-Cable-Free & Offline Test 
-ㆍ Built-in memory without data loss 
-ㆍ Offline mode with data storage 
-ㆍ Wireless data upload 
-Test Duration
-1~3 days
-Weight
-8g
-FDA clearance
-Aug. 2023
-Reuse by quick swap 
-ㆍ Fast and simple replacement of 
-     battery & adhesives 
-ㆍ Compatible with commercially
-     available coin battery and electrode 
-Optimized Test Period. 
-Minimized Weight.
-Test Duration
-14 days 
-Weight
-11g
-FDA clearance
-Feb. 2024
-Every S-Patch lineup is prepared with Long Lead version : 
-x2 extended lead length for various body sizes
-                                                                         
+1. Core Navigation & Architecture
+The objective is to streamline the current website, removing legacy pages and
+focusing on a high-conversion, professional medical technology and services layout.
+The navigation menu should be clean and persistent across all pages.
+
+
+2. Page-Specific Requirements
+A. LIFU for PCOD & PCOS (Flagship Technology)
+Headline: Clear, non-invasive therapeutic solutions for Women's Health using
+Low-Intensity Focused Ultrasound (LIFU).
+Content: High-level overview of the technology's application for PCOD/PCOS
+symptoms.
+Key Features: Painless procedure, no downtime, non-surgical approach.
+Call to Action (CTA): "Request Clinical Data" or "Book a Consultation" button.
+B. Holter Monitoring Services (Samsung Bio-Sensors)
+Hardware Focus: Integration of Wellysis devices infused with Samsung Bio
+Sensors.
+Visuals: High-quality imagery of the wearable device and the data interface.
+Technical Specs: Battery life, accuracy, patient comfort, and ease of use.
+Benefit: Medical-grade precision with consumer-level convenience.
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+• 
+C. Global Holter Data Reader Services
+• 
+• 
+• 
+Service Model: Remote diagnostic reading services provided by specialists.
+Target Audience: Healthcare providers, clinics, and diagnostic centers worldwide.
+Features: Fast turnaround time (e.g., 24-48 hours), HIPAA/Global compliance,
+detailed cardiologist reports.
+D. LIVE Cardiac Monitoring Services
+• 
+• 
+Unique Selling Point: Real-time heart health tracking and emergency alert
+systems.
+Dashboard Features: 24/7 monitoring oversight, automated event detection, and
+cloud-based data storage.
+E. About Us
+• 
+• 
+Mission: PulseBridge Healthcare’s commitment to bridging the gap in cardiac and
+women’s health diagnostics.
+Leadership: Mention of regulatory expertise (15+ years) and the founder's vision
+for social entrepreneurship and clinical excellence.
+F. Careers
+• 
+• 
+• 
+Job Board: Simple list showing Job Title, Location, and Department.
+Functionality: Ability to upload resumes directly.
+Identity: Highlight the company culture as an innovative MedTech startup.
+G. Contact Page
+• 
+• 
+• 
+Form: Fields for Name, Email, Phone, and Inquiry Type (Service/Clinical/
+Partnership).
+Direct Contact: WhatsApp API integration for immediate student/client inquiries.
+Map: Geographic presence markers for operations in Canada and India.
+3. Global Site Elements
+Social Media Integration: Prominent LinkedIn, YouTube (mentorship/
+motivational content), and Instagram icons in footer.
+Responsive Design: Must be optimized for mobile devices (essential for
+patient/clinician users).
+Trust Signals: Logos of partners (e.g., AMTZ), regulatory compliance
+badges (ISO, Health Canada, etc.).
+Speed: Optimization for low-latency loading of medical data graphics
